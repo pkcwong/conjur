@@ -1,0 +1,23 @@
+{
+  "name": "conjure",
+  "main": "index.js",
+  "scripts": {
+    "clean": "node scripts/clean.js",
+    "start": "babel-node -- ./index.js",
+    "build": "yarn install && node scripts/build.js",
+    "test": "jest --passWithNoTests --runInBand --verbose"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/core": "^7.8.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "shelljs": "^0.8.3"
+  },
+  "license": "MIT"
+}

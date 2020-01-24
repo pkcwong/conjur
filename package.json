@@ -1,0 +1,30 @@
+{
+  "name": "conjure",
+  "description": "A full stack boilerplate with NodeJS + ReactJS.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "yarn --cwd client clean && yarn --cwd server clean",
+    "build": "yarn install && yarn --cwd client build && yarn --cwd server build",
+    "start": "cross-env-shell NODE_ENV=\"production\" \"pm2 start build/server/index.js --name conjur -i 0 && pm2 monit\"",
+    "stop": "pm2 stop conjur",
+    "start:dev": "concurrently --kill-others-on-fail \"yarn run start:client\" \"yarn run start:server\"",
+    "start:client": "yarn --cwd client start",
+    "start:server": "yarn --cwd server start",
+    "test": "yarn --cwd client test && yarn --cwd server test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkcwong/conjure.git"
+  },
+  "author": "pkcwong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkcwong/conjure/issues"
+  },
+  "homepage": "https://github.com/pkcwong/conjure#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "cross-env": "^7.0.0",
+    "pm2": "^4.2.3"
+  }
+}
