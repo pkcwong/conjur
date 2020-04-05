@@ -26,6 +26,9 @@
     "shelljs": "^0.8.3"
   },
   "resolutions": {
+    "acorn": "^7.1.1",
+    "kind-of": "^6.0.3",
+    "minimist": "^0.2.1",
     "serialize-javascript": "^2.1.1"
   },
   "browserslist": {
