@@ -3,7 +3,9 @@
   "scripts": {
     "clean": "node scripts/clean.js",
     "start": "react-scripts start",
-    "build": "yarn install && node scripts/build.js",
+    "prebuild": "node scripts/prebuild.js",
+    "build": "yarn install && react-scripts build",
+    "postbuild": "node scripts/postbuild.js",
     "test": "jest --passWithNoTests --runInBand --verbose",
     "eject": "react-scripts eject"
   },
