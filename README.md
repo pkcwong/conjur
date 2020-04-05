@@ -3,6 +3,7 @@
 https://github.com/pkcwong/conjur
 
 [![CircleCI](https://circleci.com/gh/pkcwong/conjur/tree/master.svg?style=shield)](https://circleci.com/gh/pkcwong/conjur/tree/master)
+[![Heroku App Status](http://heroku-shields.herokuapp.com/conjurjs)](https://conjurjs.herokuapp.com)
 
 A full stack boilerplate project with ExpressJS + ReactJS.
 
@@ -62,6 +63,14 @@ Stop the production server.
 ```bash
 yarn stop
 ```
+
+### Deployment
+
+You may use this quick setup to deploy on [Heroku](https://dashboard.heroku.com/).
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pkcwong/conjur/tree/master)
+
+Demo App: https://conjurjs.herokuapp.com/
 
 ## Support and Updates
 
