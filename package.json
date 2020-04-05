@@ -26,5 +26,8 @@
     "concurrently": "^5.0.2",
     "cross-env": "^7.0.0",
     "pm2": "^4.2.3"
+  },
+  "resolutions": {
+    "minimist": "^0.2.1"
   }
 }
