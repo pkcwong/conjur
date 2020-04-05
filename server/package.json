@@ -4,21 +4,19 @@
   "scripts": {
     "clean": "node scripts/clean.js",
     "start": "babel-node -- ./index.js",
-    "prebuild": "node scripts/prebuild.js",
-    "build": "yarn install && babel -d \"../build/server\" --ignore node_modules . -s",
+    "prebuild": "yarn install && node scripts/prebuild.js",
+    "build": "babel -d \"../build/server\" --ignore node_modules . -s",
     "postbuild": "node scripts/postbuild.js",
     "test": "jest --passWithNoTests --runInBand --verbose"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "jest": "^25.1.0",
-    "morgan": "^1.9.1"
-  },
-  "devDependencies": {
     "@babel/cli": "^7.8.0",
     "@babel/core": "^7.8.0",
     "@babel/node": "^7.8.0",
     "@babel/preset-env": "^7.8.2",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "morgan": "^1.9.1",
     "shelljs": "^0.8.3"
   },
   "resolutions": {

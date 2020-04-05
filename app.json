@@ -1,0 +1,15 @@
+{
+  "name": "ConjurJS",
+  "description": "A full stack boilerplate project with ExpressJS + ReactJS.",
+  "keywords": [
+    "react",
+    "express"
+  ],
+  "repository": "https://github.com/pkcwong/conjur",
+  "env": {
+    "ROOT_URL": {
+      "description": "Modify accordingly https://<PROJECT_NAME>.herokuapp.com",
+      "value": "https://<PROJECT_NAME>.herokuapp.com"
+    }
+  }
+}
