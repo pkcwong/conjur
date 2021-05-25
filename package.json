@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "yarn --cwd client clean && yarn --cwd server clean",
-    "build": "yarn install && yarn --cwd client build && yarn --cwd server build",
+    "postinstall": "yarn build",
+    "build": "yarn --cwd client build && yarn --cwd server build",
     "start": "cross-env-shell NODE_ENV=\"production\" \"pm2 start build/server/index.js --name conjur -i 0 && pm2 monit\"",
     "stop": "pm2 stop conjur",
     "start:dev": "concurrently --kill-others-on-fail \"yarn run start:client\" \"yarn run start:server\"",
